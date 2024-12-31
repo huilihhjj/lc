@@ -1,0 +1,8 @@
+Update
+==================================
+UPDATE [LOW_PRIORITY] [IGNORE] table_references
+    SET assignment_list
+    [WHERE where_condition]
+* With the [LOW_PRIORITY] modifier, execution of the UPDATE is delayed until no other clients are reading from the table.
+* With the [IGNORE] modifier, the update statement does not abort even if errors occur during the update. 
+UPDATE IGNORE statements, including those having an ORDER BY clause, are flagged as unsafe for statement-based replication.
